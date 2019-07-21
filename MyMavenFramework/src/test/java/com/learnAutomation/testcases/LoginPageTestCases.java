@@ -19,7 +19,7 @@ public class LoginPageTestCases extends BaseClass{
 	
 	@Test
 	public void loginApp() {
-		
+		//This is first commit from Kuldip
 		logger = report.createTest("Login to Amazon");
 		AmazonLoginPage amazonLoginPage = PageFactory.initElements(driver, AmazonLoginPage.class);
 		logger.info("Strating application");
