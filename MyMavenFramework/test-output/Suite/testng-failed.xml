@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.learnAutomation.testcases.LoginPageTestCases">
+        <methods>
+          <include name="setUpSuite"/>
+          <include name="closeApp"/>
+          <include name="launchApp"/>
+          <include name="loginApp"/>
+          <include name="tearDownMeth"/>
+        </methods>
+      </class> <!-- com.learnAutomation.testcases.LoginPageTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
