@@ -19,13 +19,14 @@ public class LoginPageTestCases extends BaseClass{
 	
 	@Test
 	public void loginApp() {
-		//This is first commit from Kuldip
+
 		logger = report.createTest("Login to Amazon");
 		AmazonLoginPage amazonLoginPage = PageFactory.initElements(driver, AmazonLoginPage.class);
 		logger.info("Strating application");
-		amazonLoginPage.loginToFK(excel.getStringData("Login", 1, 0), excel.getStringData("Login", 1, 1));
+		//amazonLoginPage.loginToFK(excel.getStringData("Login", 1, 0), excel.getStringData("Login", 1, 1));
+		amazonLoginPage.loginToFK("kjagtap964@gmail.com", "Cool@193");
 		Listner.captureScreenShot(driver);
-		logger.pass("Login Success");
+		/*logger.pass("Login Success");
 		AmazonHomePage amazonHomePage = PageFactory.initElements(driver, AmazonHomePage.class);
 		String handle= driver.getWindowHandle();
 		amazonHomePage.inputSeachItem.sendKeys("Apple iPhone X (256GB) - Space Grey");
@@ -53,7 +54,7 @@ public class LoginPageTestCases extends BaseClass{
 		
 		Actions actions = new Actions(driver);
 		actions.moveToElement(amazonHomePage.labelAccountAndList);
-		actions.moveToElement(amazonHomePage.labelSignOut).click();
+		actions.moveToElement(amazonHomePage.labelSignOut).click();*/
 	}
 	
 
